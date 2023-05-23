@@ -1,0 +1,10 @@
+object frmNFServico: TfrmNFServico
+  Left = 306
+  Height = 558
+  Top = 119
+  Width = 782
+  BorderStyle = bsDialog
+  Caption = 'Nota Fiscal de Serviço'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+end

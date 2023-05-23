@@ -1,0 +1,10 @@
+object frmEmissaoNFServico: TfrmEmissaoNFServico
+  Left = 306
+  Height = 389
+  Top = 119
+  Width = 935
+  BorderStyle = bsDialog
+  Caption = 'Emissão de Nota Fiscal de Serviço'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+end

@@ -1,0 +1,42 @@
+object frmEmissaoNFServico: TfrmEmissaoNFServico
+  Left = 306
+  Height = 389
+  Top = 119
+  Width = 935
+  BorderStyle = bsDialog
+  Caption = 'Emissão de Nota Fiscal de Serviço'
+  ClientHeight = 389
+  ClientWidth = 935
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object pntop: TPanel
+    Left = 0
+    Height = 50
+    Top = 0
+    Width = 935
+    Align = alTop
+    Color = clMenu
+    ParentColor = False
+    TabOrder = 0
+  end
+  object pnBotton: TPanel
+    Left = 0
+    Height = 50
+    Top = 339
+    Width = 935
+    Align = alBottom
+    Color = clMenu
+    ParentColor = False
+    TabOrder = 1
+  end
+  object pnClient: TPanel
+    Left = 0
+    Height = 289
+    Top = 50
+    Width = 935
+    Align = alClient
+    Color = clWindow
+    ParentColor = False
+    TabOrder = 2
+  end
+end

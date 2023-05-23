@@ -1,0 +1,10 @@
+object frmEmissaoNotasPordutos: TfrmEmissaoNotasPordutos
+  Left = 306
+  Height = 447
+  Top = 119
+  Width = 944
+  BorderStyle = bsDialog
+  Caption = 'Enissão de Notas de Produtos'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+end

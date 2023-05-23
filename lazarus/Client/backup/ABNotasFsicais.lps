@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CONFIG>
+  <ProjectSession>
+    <PathDelim Value="\"/>
+    <Version Value="12"/>
+    <BuildModes Active="Default"/>
+    <Units>
+      <Unit>
+        <Filename Value="ABNotasFsicais.lpr"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="-1"/>
+        <WindowIndex Value="-1"/>
+        <TopLine Value="-1"/>
+        <CursorPos X="-1" Y="-1"/>
+        <UsageCount Value="22"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNotasFiscais"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmNotasFiscais"/>
+        <TopLine Value="69"/>
+        <CursorPos X="51" Y="73"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmdigitacaonotasprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmDigitacaoNotaProduto"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmDigitacaoNotasProdutos"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="18"/>
+        <CursorPos X="29" Y="34"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmemissaonotasprodutos.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEmissaoNotasPordutos"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmEmissaoNotasProdutos"/>
+        <EditorIndex Value="5"/>
+        <TopLine Value="13"/>
+        <CursorPos X="33" Y="36"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmnfservico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNFServico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmNFServico"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="10"/>
+        <CursorPos X="19"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmEmissaoNFServico"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmEmissaoNFServico"/>
+        <EditorIndex Value="4"/>
+        <CursorPos X="26"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="1"/>
+        <CursorPos X="43" Y="8"/>
+        <UsageCount Value="22"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+    </Units>
+    <JumpHistory HistoryIndex="29">
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="42" Column="3" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="41" Column="3" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="42" Column="3" TopLine="19"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="43" Column="3" TopLine="20"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="44" Column="3" TopLine="21"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="45" Column="3" TopLine="22"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="46" Column="3" TopLine="23"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="47" Column="3" TopLine="24"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="48" Column="3" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="49" Column="3" TopLine="26"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="35" Column="46" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="36" Column="112" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="38" Column="112" TopLine="30"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="46" Column="50" TopLine="39"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="45" Column="50" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmdigitacaonotasprodutos.pas"/>
+        <Caret Line="18" Column="25"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonotasprodutos.pas"/>
+        <Caret Line="18" Column="25"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="60" Column="31" TopLine="46"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="71" Column="31" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="61" Column="31" TopLine="48"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmnfservico.pas"/>
+        <Caret Line="18" Column="25"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+        <Caret Line="21" Column="25" TopLine="7"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="10" Column="37"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="84" Column="20" TopLine="65"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="78" Column="104" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="77" Column="104" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="41" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="33" Column="11" TopLine="25"/>
+      </Position>
+    </JumpHistory>
+    <RunParams>
+      <FormatVersion Value="2"/>
+      <Modes ActiveMode=""/>
+    </RunParams>
+  </ProjectSession>
+</CONFIG>

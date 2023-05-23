@@ -1,0 +1,69 @@
+object frmNotasFiscais: TfrmNotasFiscais
+  Left = 277
+  Height = 240
+  Top = 97
+  Width = 780
+  Caption = 'Notas Fiscais'
+  Menu = MainMenu1
+  LCLVersion = '2.2.6.0'
+  WindowState = wsMaximized
+  object MainMenu1: TMainMenu
+    Left = 202
+    Top = 104
+    object MenuItem16: TMenuItem
+      Caption = 'Cadastros'
+      object MenuItem17: TMenuItem
+        Caption = 'Cliente / Fornecedor'
+      end
+    end
+    object MenuItem1: TMenuItem
+      Caption = 'Nota Fiscal de produto'
+      object MenuItem3: TMenuItem
+        Caption = 'Digitação'
+        OnClick = MenuItem3Click
+        object MenuItem6: TMenuItem
+          Caption = 'Entradas'
+          OnClick = MenuItem6Click
+        end
+        object MenuItem7: TMenuItem
+          Caption = 'Saidas'
+          OnClick = MenuItem7Click
+        end
+      end
+      object MenuItem4: TMenuItem
+        Caption = 'Emissão'
+        OnClick = MenuItem4Click
+      end
+      object MenuItem5: TMenuItem
+        Caption = 'Devolução'
+        object MenuItem8: TMenuItem
+          Caption = 'Entrada'
+        end
+        object MenuItem9: TMenuItem
+          Caption = 'Saida'
+        end
+      end
+    end
+    object MenuItem2: TMenuItem
+      Caption = 'Nota Fiscal de Serviço'
+      object MenuItem11: TMenuItem
+        Caption = 'Digitação'
+        OnClick = MenuItem11Click
+      end
+      object MenuItem12: TMenuItem
+        Caption = 'Emissão'
+        OnClick = MenuItem12Click
+      end
+    end
+    object MenuItem14: TMenuItem
+      Caption = 'Sistema'
+      object MenuItem15: TMenuItem
+        Caption = 'Parametros'
+      end
+    end
+    object MenuItem18: TMenuItem
+      Caption = 'Sair'
+      OnClick = MenuItem18Click
+    end
+  end
+end

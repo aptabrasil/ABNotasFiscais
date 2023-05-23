@@ -1,0 +1,10 @@
+object frmDigitacaoNotaProduto: TfrmDigitacaoNotaProduto
+  Left = 306
+  Height = 534
+  Top = 119
+  Width = 796
+  BorderStyle = bsDialog
+  Caption = 'Digitação de nota de Produto'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+end
