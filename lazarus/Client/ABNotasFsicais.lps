@@ -12,7 +12,7 @@
         <WindowIndex Value="-1"/>
         <TopLine Value="-1"/>
         <CursorPos X="-1" Y="-1"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="ufrmnotasfiscais.pas"/>
@@ -21,10 +21,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmNotasFiscais"/>
-        <EditorIndex Value="-1"/>
-        <TopLine Value="69"/>
-        <CursorPos X="51" Y="73"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="3"/>
+        <TopLine Value="67"/>
+        <CursorPos X="51" Y="71"/>
+        <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="View\ufrmdigitacaonotasprodutos.pas"/>
@@ -36,7 +38,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="18"/>
         <CursorPos X="29" Y="34"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="View\ufrmemissaonotasprodutos.pas"/>
@@ -48,7 +50,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="13"/>
         <CursorPos X="33" Y="36"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="View\ufrmnfservico.pas"/>
@@ -60,7 +62,7 @@
         <EditorIndex Value="-1"/>
         <TopLine Value="10"/>
         <CursorPos X="19"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="39"/>
       </Unit>
       <Unit>
         <Filename Value="View\ufrmemissaonfservico.pas"/>
@@ -69,9 +71,12 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmEmissaoNFServico"/>
-        <EditorIndex Value="-1"/>
-        <CursorPos X="26"/>
-        <UsageCount Value="22"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="39"/>
+        <CursorPos X="64" Y="43"/>
+        <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
       </Unit>
       <Unit>
         <Filename Value="udm.pas"/>
@@ -80,15 +85,178 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
         <IsVisibleTab Value="True"/>
+        <TopLine Value="35"/>
+        <CursorPos X="40" Y="42"/>
+        <UsageCount Value="39"/>
+        <Loaded Value="True"/>
+        <LoadedDesigner Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uparametros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uParametros"/>
+        <EditorIndex Value="4"/>
+        <TopLine Value="72"/>
+        <CursorPos X="62" Y="84"/>
+        <UsageCount Value="34"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="udm.lfm"/>
         <EditorIndex Value="-1"/>
-        <CursorPos X="43" Y="8"/>
-        <UsageCount Value="22"/>
+        <TopLine Value="4"/>
+        <CursorPos Y="21"/>
+        <UsageCount Value="9"/>
+        <DefaultSyntaxHighlighter Value="LFM"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\ABImob\lazarus\Classes\uParametros.pas"/>
+        <EditorIndex Value="-1"/>
+        <TopLine Value="130"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\ABImob\lazarus\Classes\Conexao\uModelParametros.pas"/>
+        <EditorIndex Value="-1"/>
+        <UsageCount Value="9"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Classes\unfservico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uNFServico"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="38"/>
+        <CursorPos X="70" Y="47"/>
+        <UsageCount Value="21"/>
+        <Loaded Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uConexao.pas"/>
+        <IsPartOfProject Value="True"/>
+        <EditorIndex Value="5"/>
+        <CursorPos X="13" Y="6"/>
+        <UsageCount Value="20"/>
+        <Loaded Value="True"/>
       </Unit>
     </Units>
-    <General>
-      <ActiveWindowIndexAtStart Value="-1"/>
-    </General>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory HistoryIndex="28">
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="8" Column="43"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="45" Column="22" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="42" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="44" Column="17" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="33" Column="36" TopLine="25"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="34" Column="21" TopLine="28"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="39" Column="14" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="38" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="39" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="40" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="41" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="42" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="43" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="44" TopLine="29"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="46" Column="62" TopLine="35"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="73" Column="51" TopLine="69"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="74" Column="51" TopLine="70"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="75" Column="51" TopLine="71"/>
+      </Position>
+      <Position>
+        <Filename Value="ufrmnotasfiscais.pas"/>
+        <Caret Line="76" Column="51" TopLine="72"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="39" Column="47" TopLine="2"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="43" Column="70" TopLine="31"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="44" Column="70" TopLine="32"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+        <Caret Column="26"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+        <Caret Line="41" Column="64" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="View\ufrmemissaonfservico.pas"/>
+        <Caret Line="42" Column="64" TopLine="38"/>
+      </Position>
+      <Position>
+        <Filename Value="..\Classes\unfservico.pas"/>
+        <Caret Line="52" Column="93" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="44" Column="42" TopLine="33"/>
+      </Position>
+      <Position>
+        <Filename Value="..\..\..\Componentes\Conexao\uparametros.pas"/>
+        <Caret Line="54" Column="68" TopLine="37"/>
+      </Position>
+      <Position>
+        <Filename Value="udm.pas"/>
+        <Caret Line="45" Column="40" TopLine="35"/>
+      </Position>
+    </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
       <Modes ActiveMode=""/>

@@ -67,3 +67,6 @@ __recovery/
 
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
+lazarus/Server/backup/
+lazarus/Client/backup
+lazarus/Classes/backup/

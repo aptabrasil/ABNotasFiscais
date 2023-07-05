@@ -10,15 +10,16 @@ uses
   athreads,
   {$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, zcomponent, uFrmNotasFiscais, uFrmDigitacaoNotasProdutos,
-  uFrmEmissaoNotasProdutos, uFrmNFServico, uFrmEmissaoNFServico, udm
+  Forms, uParametros, uConexao, zcomponent, uFrmNotasFiscais,
+  uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos, uFrmNFServico,
+  uFrmEmissaoNFServico, udm, uNFServico
   { you can add units after this };
 
 {$R *.res}
 
 begin
   RequireDerivedFormResource:=True;
-  Application.Scaled:=True;
+  Application.Scaled := True;
   Application.Initialize;
   Application.CreateForm(TfrmNotasFiscais, frmNotasFiscais);
   Application.CreateForm(TfrmDigitacaoNotaProduto, frmDigitacaoNotaProduto);

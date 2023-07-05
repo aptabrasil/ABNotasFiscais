@@ -15,12 +15,23 @@ object frmNotasFiscais: TfrmNotasFiscais
       object MenuItem17: TMenuItem
         Caption = 'Cliente / Fornecedor'
       end
+      object MenuItem10: TMenuItem
+        Caption = 'Cidade'
+      end
+      object MenuItem13: TMenuItem
+        Caption = 'CFO'
+      end
+      object MenuItem19: TMenuItem
+        Caption = 'Transportadora'
+      end
+      object MenuItem20: TMenuItem
+        Caption = 'Forma de pagamento'
+      end
     end
     object MenuItem1: TMenuItem
       Caption = 'Nota Fiscal de produto'
       object MenuItem3: TMenuItem
         Caption = 'Digitação'
-        OnClick = MenuItem3Click
         object MenuItem6: TMenuItem
           Caption = 'Entradas'
           OnClick = MenuItem6Click

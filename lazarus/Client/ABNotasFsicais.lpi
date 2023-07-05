@@ -25,7 +25,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="View"/>
+            <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes"/>
             <UnitOutputDirectory Value="C:\sistemas\ABNotasFiscais\lazarus"/>
           </SearchPaths>
           <Linking>
@@ -50,6 +50,9 @@
       <FormatVersion Value="2"/>
     </RunParams>
     <RequiredPackages>
+      <Item>
+        <PackageName Value="FCL"/>
+      </Item>
       <Item>
         <PackageName Value="zcomponent"/>
       </Item>
@@ -109,6 +112,20 @@
         <HasResources Value="True"/>
         <ResourceBaseClass Value="DataModule"/>
       </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uparametros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uParametros"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Classes\unfservico.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uNFServico"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uConexao.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>
@@ -119,12 +136,13 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="View"/>
+      <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes"/>
       <UnitOutputDirectory Value="C:\sistemas\ABNotasFiscais\lazarus\Client"/>
     </SearchPaths>
     <Linking>
       <Debugging>
         <DebugInfoType Value="dsDwarf3"/>
+        <UseExternalDbgSyms Value="True"/>
       </Debugging>
       <Options>
         <Win32>

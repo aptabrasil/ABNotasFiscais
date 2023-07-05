@@ -5,20 +5,39 @@ object dm: Tdm
   HorizontalOffset = 306
   VerticalOffset = 119
   Width = 275
-  object ZConnection1: TZConnection
+  object ZCon: TZConnection
     ControlsCodePage = cCP_UTF8
     AutoEncodeStrings = True
+    ClientCodepage = 'UTF8'
     Properties.Strings = (
       'AutoEncodeStrings=True'
       'controls_cp=CP_UTF8'
+      'codepage=UTF8'
     )
     Connected = True
     Port = 0
+    Database = 'ABNotasFiscais'
     User = 'postgres'
     Password = '123456'
     Protocol = 'postgresql'
     LibraryLocation = 'C:\Program Files\PostgreSQL\15\bin\libpq.dll'
     Left = 40
     Top = 16
+  end
+  object ZQuery1: TZQuery
+    Connection = ZCon
+    Active = True
+    SQL.Strings = (
+      'select * from "CFO"'
+    )
+    Params = <>
+    Left = 147
+    Top = 21
+  end
+  object ZTable1: TZTable
+    Connection = ZCon
+    TableName = '"NotasFiscais"."CFO"'
+    Left = 107
+    Top = 96
   end
 end
