@@ -1,0 +1,36 @@
+object frmParametros: TfrmParametros
+  Left = 306
+  Height = 406
+  Top = 119
+  Width = 694
+  BorderStyle = bsDialog
+  Caption = 'Parametros'
+  ClientHeight = 406
+  ClientWidth = 694
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+  object PageControl1: TPageControl
+    Left = 0
+    Height = 356
+    Top = 0
+    Width = 694
+    ActivePage = tsNfProduto
+    Align = alClient
+    TabIndex = 0
+    TabOrder = 0
+    object tsNfProduto: TTabSheet
+      Caption = 'NF Produtos'
+    end
+    object tsNfServico: TTabSheet
+      Caption = 'NF Servicos'
+    end
+  end
+  object Panel1: TPanel
+    Left = 0
+    Height = 50
+    Top = 356
+    Width = 694
+    Align = alBottom
+    TabOrder = 1
+  end
+end

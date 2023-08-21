@@ -12,7 +12,7 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, uParametros, uConexao, zcomponent, uFrmNotasFiscais,
   uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos, uFrmNFServico,
-  uFrmEmissaoNFServico, udm, uNFServico
+  uFrmEmissaoNFServico, udm, uNFServico, uFrmParametros
   { you can add units after this };
 
 {$R *.res}
@@ -27,6 +27,7 @@ begin
   Application.CreateForm(TfrmNFServico, frmNFServico);
   Application.CreateForm(TfrmEmissaoNFServico, frmEmissaoNFServico);
   Application.CreateForm(Tdm, dm);
+  Application.CreateForm(TfrmParametros, frmParametros);
   Application.Run;
 end.
 

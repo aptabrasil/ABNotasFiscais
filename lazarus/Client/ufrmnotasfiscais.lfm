@@ -70,6 +70,7 @@ object frmNotasFiscais: TfrmNotasFiscais
       Caption = 'Sistema'
       object MenuItem15: TMenuItem
         Caption = 'Parametros'
+        OnClick = MenuItem15Click
       end
     end
     object MenuItem18: TMenuItem

@@ -126,6 +126,13 @@
         <Filename Value="..\..\..\Componentes\Conexao\uConexao.pas"/>
         <IsPartOfProject Value="True"/>
       </Unit>
+      <Unit>
+        <Filename Value="View\ufrmparametros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmParametros"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmParametros"/>
+      </Unit>
     </Units>
   </ProjectOptions>
   <CompilerOptions>

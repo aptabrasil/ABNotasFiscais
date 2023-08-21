@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus,
-  uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos,
+  uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos, uFrmParametros,
   uFrmEmissaoNFServico,uFrmNFServico;
 
 type
@@ -37,6 +37,7 @@ type
     MenuItem9: TMenuItem;
     procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem12Click(Sender: TObject);
+    procedure MenuItem15Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
@@ -84,6 +85,11 @@ end;
 procedure TfrmNotasFiscais.MenuItem12Click(Sender: TObject);
 begin
   TfrmEmissaoNFServico.New;
+end;
+
+procedure TfrmNotasFiscais.MenuItem15Click(Sender: TObject);
+begin
+  TfrmParametros.New;
 end;
 
 end.

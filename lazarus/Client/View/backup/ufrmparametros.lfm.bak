@@ -1,0 +1,10 @@
+object frmParametros: TfrmParametros
+  Left = 306
+  Height = 406
+  Top = 119
+  Width = 694
+  BorderStyle = bsDialog
+  Caption = 'Parametros'
+  Position = poMainFormCenter
+  LCLVersion = '2.2.6.0'
+end

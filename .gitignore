@@ -49,6 +49,7 @@
 *.cfg
 *.hpp
 *Resource.rc
+*.dbg
 
 # Delphi local files (user-specific info)
 *.local
@@ -68,5 +69,7 @@ __recovery/
 # Boss dependency manager vendor folder https://github.com/HashLoad/boss
 modules/
 lazarus/Server/backup/
+lazarus/Server/lib/
 lazarus/Client/backup
 lazarus/Classes/backup/
+lazarus/temp/

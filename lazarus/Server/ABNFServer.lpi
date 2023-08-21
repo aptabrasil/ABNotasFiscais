@@ -4,15 +4,16 @@
     <Version Value="12"/>
     <PathDelim Value="\"/>
     <General>
-      <Flags>
-        <MainUnitHasCreateFormStatements Value="False"/>
-        <MainUnitHasTitleStatement Value="False"/>
-        <MainUnitHasScaledStatement Value="False"/>
-      </Flags>
       <SessionStorage Value="InProjectDir"/>
+      <AutoCreateForms Value="False"/>
       <Title Value="ABNFServer"/>
-      <UseAppBundle Value="False"/>
+      <Scaled Value="True"/>
       <ResourceType Value="res"/>
+      <UseXPManifest Value="True"/>
+      <XPManifest>
+        <DpiAware Value="True"/>
+      </XPManifest>
+      <Icon Value="0"/>
     </General>
     <BuildModes>
       <Item Name="Default" Default="True"/>
@@ -24,10 +25,80 @@
     <RunParams>
       <FormatVersion Value="2"/>
     </RunParams>
+    <RequiredPackages>
+      <Item>
+        <PackageName Value="LazUtils"/>
+      </Item>
+      <Item>
+        <PackageName Value="zcomponent"/>
+      </Item>
+      <Item>
+        <PackageName Value="LCL"/>
+      </Item>
+    </RequiredPackages>
     <Units>
       <Unit>
         <Filename Value="ABNFServer.lpr"/>
         <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="ufrmserver.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmNFServer"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmServer"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Model\udm.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="dm"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="DataModule"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uparametros.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uParametros"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\..\..\Componentes\Conexao\uConexao.pas"/>
+        <IsPartOfProject Value="True"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Routes\ubasicroutes.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uBasicRoutes"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Interfaces\uijsonresults.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uIJsonResults"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Classes\ujsonresult.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uJsonResult"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\interfaces\umodelsinterfaces.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModelsInterfaces"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\Enuns\uenuns.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEnuns"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\impl\umodelpessoa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uModelPessoa"/>
+      </Unit>
+      <Unit>
+        <Filename Value="Routes\upessoaroute.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPessoaRoute"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -35,19 +106,31 @@
     <Version Value="11"/>
     <PathDelim Value="\"/>
     <Target>
-      <Filename Value="ABNFServer"/>
+      <Filename Value="lib\ABNFServer"/>
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="..\..\..\Componentes\horse\src"/>
-      <UnitOutputDirectory Value="C:\sistemas\ABNotasFiscais\lazarus\Server"/>
+      <OtherUnitFiles Value="C:\sistemas\Componentes\horse\src\;..\..\..\Componentes\dataset-serialize\src;Model;..\..\..\Componentes\Conexao;..\Interfaces;..\Classes;Routes;..\Models\interfaces;..\Models\Enuns;..\Models\impl"/>
+      <UnitOutputDirectory Value="..\temp\$(TargetCPU)-$(TargetOS)"/>
     </SearchPaths>
     <Linking>
       <Debugging>
         <DebugInfoType Value="dsDwarf3"/>
+        <UseHeaptrc Value="True"/>
         <UseExternalDbgSyms Value="True"/>
       </Debugging>
+      <Options>
+        <Win32>
+          <GraphicApplication Value="True"/>
+        </Win32>
+      </Options>
     </Linking>
+    <Other>
+      <CustomOptions Value="-dHORSE_LCL"/>
+      <OtherDefines Count="1">
+        <Define0 Value="HORSE_LCL"/>
+      </OtherDefines>
+    </Other>
   </CompilerOptions>
   <Debugging>
     <Exceptions>
@@ -59,6 +142,9 @@
       </Item>
       <Item>
         <Name Value="EFOpenError"/>
+      </Item>
+      <Item>
+        <Name Value="EHTTPServer"/>
       </Item>
     </Exceptions>
   </Debugging>
