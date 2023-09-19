@@ -5,14 +5,16 @@ unit uFrmEmissaoNFServico;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  StdCtrls, MaskEdit;
+  Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
+  StdCtrls, MaskEdit, Buttons;
 
 type
 
   { TfrmEmissaoNFServico }
 
   TfrmEmissaoNFServico = class(TForm)
+    bbExecutar: TBitBtn;
+    DataSource1: TDataSource;
     DBGrid1: TDBGrid;
     GroupBox1: TGroupBox;
     Label1: TLabel;

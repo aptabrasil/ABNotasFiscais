@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, DB, Forms, Controls, Graphics, Dialogs, ExtCtrls, DBGrids,
-  StdCtrls, MaskEdit, Buttons;
+  StdCtrls, MaskEdit, Buttons, uNFServico;
 
 type
 
@@ -14,7 +14,7 @@ type
 
   TfrmEmissaoNFServico = class(TForm)
     bbExecutar: TBitBtn;
-    DataSource1: TDataSource;
+    ds: TDataSource;
     DBGrid1: TDBGrid;
     GroupBox1: TGroupBox;
     Label1: TLabel;
@@ -25,9 +25,10 @@ type
     pnBotton: TPanel;
     pnClient: TPanel;
     RadioGroup1: TRadioGroup;
+    procedure bbExecutarClick(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
-
+    FNFServico : TNFServico;
   public
     class procedure New;
   end;
@@ -45,6 +46,14 @@ procedure TfrmEmissaoNFServico.FormCreate(Sender: TObject);
 begin
   medti.Text := FormatDateTime('DD/MM/YY',now);
   medtf.Text := FormatDateTime('DD/MM/YY',now);
+  FNFServico := TNFServico.Create;
+end;
+
+procedure TfrmEmissaoNFServico.bbExecutarClick(Sender: TObject);
+begin
+  case RadioGroup1.ItemIndex of
+    0 : FNFServico.findByDoNotIssued(ds);
+  end;
 end;
 
 class procedure TfrmEmissaoNFServico.New;

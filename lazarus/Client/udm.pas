@@ -5,16 +5,27 @@ unit udm;
 interface
 
 uses
-  Classes, SysUtils, ZConnection, ZDataset, iniFiles, uParametros, DIalogs;
+  Classes, SysUtils, ZConnection, ZDataset, ZSqlUpdate, iniFiles, uParametros,
+  DB, DIalogs;
 
 type
 
   { Tdm }
 
   Tdm = class(TDataModule)
+    DataSource1: TDataSource;
     ZCon: TZConnection;
     ZQuery1: TZQuery;
+    ZQuery1Cliente: TBooleanField;
+    ZQuery1CNPJ: TStringField;
+    ZQuery1Fornecedor: TBooleanField;
+    ZQuery1ID: TLongintField;
+    ZQuery1IdEmp: TLongintField;
+    ZQuery1IdEndereco: TLongintField;
+    ZQuery1IE: TStringField;
+    ZQuery1Nome: TStringField;
     ZTable1: TZTable;
+    ZUpdateSQL1: TZUpdateSQL;
     procedure DataModuleCreate(Sender: TObject);
   private
     procedure Ler_ini;

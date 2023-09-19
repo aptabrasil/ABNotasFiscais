@@ -176,6 +176,7 @@ object frmEmissaoNFServico: TfrmEmissaoNFServico
         0000000000000000000000000000000000000000000000000000000000000000
         0000000000000000000000000000000000000000000000000000
       }
+      OnClick = bbExecutarClick
       TabOrder = 2
     end
   end
@@ -208,10 +209,11 @@ object frmEmissaoNFServico: TfrmEmissaoNFServico
       Align = alClient
       Color = clWindow
       Columns = <>
+      DataSource = ds
       TabOrder = 0
     end
   end
-  object DataSource1: TDataSource
+  object ds: TDataSource
     Left = 736
     Top = 8
   end

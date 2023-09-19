@@ -71,5 +71,8 @@ modules/
 lazarus/Server/backup/
 lazarus/Server/lib/
 lazarus/Client/backup
+lazarus/Client/view/backup
 lazarus/Classes/backup/
+lazarus/Models/impl/backup
 lazarus/temp/
+dados/

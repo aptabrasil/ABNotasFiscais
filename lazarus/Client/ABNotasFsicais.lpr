@@ -12,8 +12,8 @@ uses
   Interfaces, // this includes the LCL widgetset
   Forms, uParametros, uConexao, zcomponent, uFrmNotasFiscais,
   uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos, uFrmNFServico,
-  uFrmEmissaoNFServico, udm, uNFServico, uFrmParametros
-  { you can add units after this };
+  uFrmEmissaoNFServico, udm, uNFServico, uFrmParametros, uFrmCadastroBase, 
+uFrmCidades, uCidades, uPessoa, uEndereco, uFrmPessoa;
 
 {$R *.res}
 
@@ -21,13 +21,8 @@ begin
   RequireDerivedFormResource:=True;
   Application.Scaled := True;
   Application.Initialize;
-  Application.CreateForm(TfrmNotasFiscais, frmNotasFiscais);
-  Application.CreateForm(TfrmDigitacaoNotaProduto, frmDigitacaoNotaProduto);
-  Application.CreateForm(TfrmEmissaoNotasPordutos, frmEmissaoNotasPordutos);
-  Application.CreateForm(TfrmNFServico, frmNFServico);
-  Application.CreateForm(TfrmEmissaoNFServico, frmEmissaoNFServico);
   Application.CreateForm(Tdm, dm);
-  Application.CreateForm(TfrmParametros, frmParametros);
+  Application.CreateForm(TfrmNotasFiscais, frmNotasFiscais);
   Application.Run;
 end.
 

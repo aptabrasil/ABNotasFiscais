@@ -5,7 +5,7 @@ unit uNFServico;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, DB, uConexao;
 
 type
 
@@ -13,6 +13,7 @@ type
 
   TNFServico = class
   private
+    FConexao : TConexao;
     FCondicaoPagamento: string;
     FDataCompetencia: TDate;
     FDataEmissao: TDate;
@@ -50,6 +51,10 @@ type
     property  ValorLiquido : Double read FValorLiquido write SetValorLiquido;
     property  ValorDesconto : Double read FValorDesconto write SetValorDesconto;
     property  CondicaoPagamento : string read FCondicaoPagamento write SetCondicaoPagamento;
+  public
+    constructor Cretate;
+    destructor Destroy; override;
+    function findByDoNotIssued(aDs : TDataSource) : TNFServico;
   end;
 
 implementation
@@ -126,6 +131,28 @@ procedure TNFServico.SetValorTotal(AValue: Double);
 begin
   if FValorTotal = AValue then Exit;
   FValorTotal := AValue;
+end;
+
+constructor TNFServico.Cretate;
+begin
+  FConexao := TConexao.Create;
+end;
+
+destructor TNFServico.Destroy;
+begin
+  FreeAndNil(FConexao);
+  inherited Destroy;
+end;
+
+function TNFServico.findByDoNotIssued(aDs: TDataSource): TNFServico;
+begin
+  FConexao.criarQuery('SELECT "Id", "Numero", "DataEmissao", "DataCompetencia",'+
+                     '"DataEmissaoRPS", "NaturezaOperacao", '+
+                     '"RegimeEspecialTributacao", "idPessoa", "ValorTotal", '+
+                     '"ValorLiquido", "ValorDesconto", "CondicaoPagamento"'+
+	              ' FROM "NotasFiscais"."NFServico"'+
+                 ' where "Numero" is null;');
+  ads.DataSet := FConexao.Query;
 end;
 
 end.

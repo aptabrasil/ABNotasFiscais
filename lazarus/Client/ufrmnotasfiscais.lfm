@@ -5,6 +5,7 @@ object frmNotasFiscais: TfrmNotasFiscais
   Width = 780
   Caption = 'Notas Fiscais'
   Menu = MainMenu1
+  OnCreate = FormCreate
   LCLVersion = '2.2.6.0'
   WindowState = wsMaximized
   object MainMenu1: TMainMenu
@@ -14,9 +15,11 @@ object frmNotasFiscais: TfrmNotasFiscais
       Caption = 'Cadastros'
       object MenuItem17: TMenuItem
         Caption = 'Cliente / Fornecedor'
+        OnClick = MenuItem17Click
       end
       object MenuItem10: TMenuItem
         Caption = 'Cidade'
+        OnClick = MenuItem10Click
       end
       object MenuItem13: TMenuItem
         Caption = 'CFO'

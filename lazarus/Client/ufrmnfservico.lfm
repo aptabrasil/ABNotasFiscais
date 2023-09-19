@@ -1,10 +1,634 @@
-object frmNFServico: TfrmNFServico
-  Left = 306
-  Height = 558
-  Top = 119
-  Width = 782
-  BorderStyle = bsDialog
+inherited frmNFServico: TfrmNFServico
+  Left = 300
+  Height = 583
+  Top = 96
+  Width = 787
   Caption = 'Nota Fiscal de Serviço'
+  ClientHeight = 583
+  ClientWidth = 787
+  OnClose = FormClose
+  OnCreate = FormCreate
   Position = poMainFormCenter
-  LCLVersion = '2.2.6.0'
+  inherited Notebook1: TNotebook
+    Height = 583
+    Width = 787
+    PageIndex = 1
+    inherited Lista: TPage
+      inherited Panel3: TPanel
+        Height = 483
+        Width = 787
+        ClientHeight = 483
+        ClientWidth = 787
+        inherited DBGrid1: TDBGrid
+          Height = 477
+          Width = 781
+          Columns = <          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Id'
+              Width = 60
+              FieldName = 'Id'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Numero'
+              Width = 65
+              FieldName = 'Numero'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'DataEmissao'
+              Width = 75
+              FieldName = 'DataEmissao'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'ValorTotal'
+              Width = 90
+              FieldName = 'ValorTotal'
+            end>
+        end
+      end
+      inherited pnFeraamenta: TPanel
+        Width = 787
+        ClientWidth = 787
+      end
+      inherited pnPesquisa: TPanel
+        Width = 787
+        ClientWidth = 787
+        inherited BitBtn7: TBitBtn
+          Left = 632
+        end
+        inherited BitBtn8: TBitBtn
+          Left = 709
+        end
+      end
+    end
+    inherited Dados: TPage
+      inherited Panel4: TPanel
+        Height = 483
+        Width = 787
+        ClientHeight = 483
+        ClientWidth = 787
+        object pnDados: TPanel[0]
+          Left = 1
+          Height = 63
+          Top = 1
+          Width = 785
+          Align = alTop
+          ClientHeight = 63
+          ClientWidth = 785
+          ParentColor = False
+          TabOrder = 0
+          object Label2: TLabel
+            Left = 15
+            Height = 15
+            Top = 7
+            Width = 11
+            Caption = 'ID'
+            ParentColor = False
+          end
+          object Label3: TLabel
+            Left = 120
+            Height = 15
+            Top = 7
+            Width = 86
+            Caption = 'Data de emissão'
+            ParentColor = False
+          end
+          object Label4: TLabel
+            Left = 236
+            Height = 15
+            Top = 7
+            Width = 114
+            Caption = 'Data de Competencia'
+            ParentColor = False
+          end
+          object Label5: TLabel
+            Left = 394
+            Height = 15
+            Top = 7
+            Width = 117
+            Caption = 'Natureza de Operação'
+            ParentColor = False
+          end
+          object DBEdit1: TDBEdit
+            Left = 16
+            Height = 23
+            Top = 22
+            Width = 80
+            DataField = 'Id'
+            DataSource = ds
+            Enabled = False
+            Font.Color = clRed
+            MaxLength = 0
+            ParentFont = False
+            TabOrder = 0
+          end
+          object DBEdit2: TDBEdit
+            Left = 120
+            Height = 23
+            Top = 22
+            Width = 100
+            DataField = 'DataEmissao'
+            DataSource = ds
+            MaxLength = 0
+            TabOrder = 1
+          end
+          object DBEdit3: TDBEdit
+            Left = 236
+            Height = 23
+            Top = 22
+            Width = 100
+            DataField = 'DataCompetencia'
+            DataSource = ds
+            MaxLength = 0
+            TabOrder = 2
+          end
+          object DBLookupComboBox1: TDBLookupComboBox
+            Left = 394
+            Height = 23
+            Top = 22
+            Width = 170
+            DataField = 'NaturezaOperacao'
+            DataSource = ds
+            ListFieldIndex = 0
+            LookupCache = False
+            TabOrder = 3
+          end
+        end
+        object pnCliente: TPanel[1]
+          Left = 1
+          Height = 108
+          Top = 64
+          Width = 785
+          Align = alTop
+          BevelColor = clHotLight
+          ClientHeight = 108
+          ClientWidth = 785
+          TabOrder = 1
+          object GroupBox1: TGroupBox
+            Left = 1
+            Height = 106
+            Top = 1
+            Width = 783
+            Align = alClient
+            Caption = 'Cliente'
+            ClientHeight = 86
+            ClientWidth = 779
+            TabOrder = 0
+            object Label10: TLabel
+              Left = 10
+              Height = 15
+              Top = -1
+              Width = 11
+              Caption = 'ID'
+              ParentColor = False
+            end
+            object Label11: TLabel
+              Left = 120
+              Height = 15
+              Top = 0
+              Width = 33
+              Caption = 'Nome'
+              ParentColor = False
+            end
+            object Label12: TLabel
+              Left = 10
+              Height = 15
+              Top = 24
+              Width = 53
+              Caption = 'CNPJ/CPF'
+              ParentColor = False
+            end
+            object Label13: TLabel
+              Left = 272
+              Height = 15
+              Top = 24
+              Width = 41
+              Caption = 'I.E./R.G.'
+              ParentColor = False
+            end
+            object Label14: TLabel
+              Left = 10
+              Height = 15
+              Top = 48
+              Width = 49
+              Caption = 'Endereço'
+              ParentColor = False
+            end
+            object Label15: TLabel
+              Left = 470
+              Height = 15
+              Top = 48
+              Width = 44
+              Caption = 'Numero'
+              ParentColor = False
+            end
+            object Label16: TLabel
+              Left = 10
+              Height = 15
+              Top = 71
+              Width = 31
+              Caption = 'Bairro'
+              ParentColor = False
+            end
+            object Label17: TLabel
+              Left = 272
+              Height = 15
+              Top = 71
+              Width = 37
+              Caption = 'Cidade'
+              ParentColor = False
+            end
+            object Label18: TLabel
+              Left = 598
+              Height = 15
+              Top = 71
+              Width = 20
+              Caption = 'U.F.'
+              ParentColor = False
+            end
+            object Label19: TLabel
+              Left = 634
+              Height = 15
+              Top = 48
+              Width = 21
+              Caption = 'CEP'
+              ParentColor = False
+            end
+            object DBText1: TDBText
+              Left = 32
+              Height = 15
+              Top = -1
+              Width = 41
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText2: TDBText
+              Left = 176
+              Height = 15
+              Top = -1
+              Width = 41
+              DataField = 'nome'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText4: TDBText
+              Left = 320
+              Height = 15
+              Top = 24
+              Width = 41
+              DataField = 'ie'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText5: TDBText
+              Left = 72
+              Height = 15
+              Top = 48
+              Width = 384
+              AutoSize = False
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText6: TDBText
+              Left = 520
+              Height = 15
+              Top = 48
+              Width = 89
+              AutoSize = False
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText7: TDBText
+              Left = 664
+              Height = 15
+              Top = 48
+              Width = 41
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText8: TDBText
+              Left = 72
+              Height = 15
+              Top = 72
+              Width = 192
+              AutoSize = False
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText9: TDBText
+              Left = 320
+              Height = 15
+              Top = 71
+              Width = 249
+              AutoSize = False
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object DBText10: TDBText
+              Left = 624
+              Height = 15
+              Top = 71
+              Width = 47
+              DataField = 'Id'
+              DataSource = dsClient
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+            object SpeedButton1: TSpeedButton
+              Left = 90
+              Height = 22
+              Top = -4
+              Width = 23
+              OnClick = SpeedButton1Click
+            end
+            object lblcnpj: TLabel
+              Left = 72
+              Height = 15
+              Top = 22
+              Width = 36
+              Caption = 'lblcnpj'
+              Font.Color = clRed
+              ParentColor = False
+              ParentFont = False
+            end
+          end
+        end
+        object pnCliente1: TPanel[2]
+          Left = 1
+          Height = 120
+          Top = 172
+          Width = 785
+          Align = alTop
+          BevelColor = clRed
+          ClientHeight = 120
+          ClientWidth = 785
+          TabOrder = 2
+          object GroupBox2: TGroupBox
+            Left = 1
+            Height = 118
+            Top = 1
+            Width = 783
+            Align = alClient
+            Caption = 'Descrição dos serviços'
+            ClientHeight = 98
+            ClientWidth = 779
+            TabOrder = 0
+            object DBMemo1: TDBMemo
+              Left = 0
+              Height = 98
+              Top = 0
+              Width = 779
+              Align = alClient
+              DataSource = ds
+              TabOrder = 0
+            end
+          end
+        end
+        object Label6: TLabel[3]
+          Left = 11
+          Height = 15
+          Top = 317
+          Width = 54
+          Caption = 'Valor Total'
+          ParentColor = False
+        end
+        object Label7: TLabel[4]
+          Left = 120
+          Height = 15
+          Top = 317
+          Width = 50
+          Caption = 'Desconto'
+          ParentColor = False
+        end
+        object Label8: TLabel[5]
+          Left = 232
+          Height = 15
+          Top = 317
+          Width = 69
+          Caption = 'Valor Liquido'
+          ParentColor = False
+        end
+        object Label9: TLabel[6]
+          Left = 11
+          Height = 15
+          Top = 369
+          Width = 131
+          Caption = 'Condição de pagamento'
+          ParentColor = False
+        end
+        object DBEdit4: TDBEdit[7]
+          Left = 12
+          Height = 23
+          Top = 332
+          Width = 100
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 3
+        end
+        object DBEdit5: TDBEdit[8]
+          Left = 120
+          Height = 23
+          Top = 332
+          Width = 100
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 4
+        end
+        object DBEdit6: TDBEdit[9]
+          Left = 232
+          Height = 23
+          Top = 332
+          Width = 100
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 5
+        end
+        object DBLookupComboBox2: TDBLookupComboBox[10]
+          Left = 13
+          Height = 23
+          Top = 386
+          Width = 316
+          ListFieldIndex = 0
+          LookupCache = False
+          TabOrder = 6
+        end
+      end
+      inherited Panel5: TPanel
+        Width = 787
+        ClientWidth = 787
+      end
+      inherited Panel6: TPanel
+        Top = 533
+        Width = 787
+        ClientWidth = 787
+        inherited BitBtn2: TBitBtn
+          Left = 636
+        end
+        inherited BitBtn5: TBitBtn
+          Left = 711
+        end
+      end
+    end
+  end
+  inherited Qsql: TZQuery
+    SQL.Strings = (
+      'SELECT "Id", "Numero", "DataEmissao", "DataCompetencia", "DataEmissaoRPS", "NaturezaOperacao", "RegimeEspecialTributacao", "idPessoa", "ValorTotal", "ValorLiquido", "ValorDesconto", "CondicaoPagamento"'
+      #9'FROM "NotasFiscais"."NFServico"'
+      #9'where "Id" is null;'
+    )
+    object QsqlId: TLongintField[0]
+      FieldKind = fkData
+      FieldName = 'Id'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QsqlNumero: TLongintField[1]
+      FieldKind = fkData
+      FieldName = 'Numero'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QsqlDataEmissao: TDateField[2]
+      FieldKind = fkData
+      FieldName = 'DataEmissao'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = '!99/99/00;1;_'
+      EditMask = '!99/99/00;1;_'
+    end
+    object QsqlDataCompetencia: TDateField[3]
+      FieldKind = fkData
+      FieldName = 'DataCompetencia'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = '!99/99/00;1;_'
+      EditMask = '!99/99/00;1;_'
+    end
+    object QsqlDataEmissaoRPS: TDateField[4]
+      FieldKind = fkData
+      FieldName = 'DataEmissaoRPS'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      DisplayFormat = '!99/99/00;1;_'
+      EditMask = '!99/99/00;1;_'
+    end
+    object QsqlNaturezaOperacao: TLongintField[5]
+      FieldKind = fkData
+      FieldName = 'NaturezaOperacao'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QsqlRegimeEspecialTributacao: TStringField[6]
+      FieldKind = fkData
+      FieldName = 'RegimeEspecialTributacao'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 200
+    end
+    object QsqlidPessoa: TLongintField[7]
+      FieldKind = fkData
+      FieldName = 'idPessoa'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QsqlValorTotal: TFloatField[8]
+      FieldKind = fkData
+      FieldName = 'ValorTotal'
+      Index = 8
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '0.00'
+      EditFormat = '0.00'
+      Precision = 8
+    end
+    object QsqlValorLiquido: TFloatField[9]
+      FieldKind = fkData
+      FieldName = 'ValorLiquido'
+      Index = 9
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '0.00'
+      EditFormat = '0.00'
+      Precision = 8
+    end
+    object QsqlValorDesconto: TFloatField[10]
+      FieldKind = fkData
+      FieldName = 'ValorDesconto'
+      Index = 10
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayFormat = '0.00'
+      EditFormat = '0.00'
+      Precision = 8
+    end
+    object QsqlCondicaoPagamento: TLongintField[11]
+      FieldKind = fkData
+      FieldName = 'CondicaoPagamento'
+      Index = 11
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+  object dsClient: TDataSource[3]
+    Left = 712
+    Top = 8
+  end
 end

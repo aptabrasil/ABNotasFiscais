@@ -1,0 +1,227 @@
+inherited frmCidades: TfrmCidades
+  Left = 327
+  Top = 144
+  Caption = 'Cadastro de Cidades'
+  OnClose = nil
+  inherited Notebook1: TNotebook
+    inherited Lista: TPage
+      inherited Panel3: TPanel
+        inherited DBGrid1: TDBGrid
+          Columns = <          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'ID'
+              Width = 50
+              FieldName = 'ID'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'Municipio'
+              Width = 300
+              FieldName = 'Municipio'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'UF'
+              Width = 30
+              FieldName = 'UF'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'IBGE'
+              Width = 90
+              FieldName = 'IBGE'
+            end          
+            item
+              PickList.Strings = (              )
+              Title.Caption = 'IBGE7'
+              Width = 90
+              FieldName = 'IBGE7'
+            end>
+        end
+      end
+    end
+    inherited Dados: TPage
+      inherited Panel4: TPanel
+        object Label2: TLabel[0]
+          Left = 21
+          Height = 15
+          Top = 22
+          Width = 11
+          Caption = 'ID'
+          ParentColor = False
+        end
+        object Label3: TLabel[1]
+          Left = 20
+          Height = 15
+          Top = 66
+          Width = 54
+          Caption = 'Municipio'
+          ParentColor = False
+        end
+        object Label4: TLabel[2]
+          Left = 320
+          Height = 15
+          Top = 66
+          Width = 14
+          Caption = 'UF'
+          ParentColor = False
+        end
+        object Label5: TLabel[3]
+          Left = 21
+          Height = 15
+          Top = 118
+          Width = 66
+          Caption = 'Código IBGE'
+          ParentColor = False
+        end
+        object Label6: TLabel[4]
+          Left = 161
+          Height = 15
+          Top = 118
+          Width = 72
+          Caption = 'Código IBGE7'
+          ParentColor = False
+        end
+        object DBEdit1: TDBEdit[5]
+          Left = 21
+          Height = 23
+          Top = 38
+          Width = 80
+          DataField = 'ID'
+          DataSource = ds
+          Enabled = False
+          Font.Color = clRed
+          MaxLength = 0
+          ParentFont = False
+          TabOrder = 0
+        end
+        object DBEdit2: TDBEdit[6]
+          Left = 21
+          Height = 23
+          Top = 82
+          Width = 280
+          DataField = 'Municipio'
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 1
+        end
+        object DBEdit3: TDBEdit[7]
+          Left = 21
+          Height = 23
+          Top = 136
+          Width = 107
+          DataField = 'IBGE'
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 3
+        end
+        object DBEdit4: TDBEdit[8]
+          Left = 161
+          Height = 23
+          Top = 136
+          Width = 111
+          DataField = 'IBGE7'
+          DataSource = ds
+          MaxLength = 0
+          TabOrder = 4
+        end
+        object cbUF: TDBComboBox[9]
+          Left = 320
+          Height = 23
+          Top = 82
+          Width = 64
+          DataField = 'UF'
+          DataSource = ds
+          ItemHeight = 15
+          Items.Strings = (
+            'AC'
+            'AL'
+            'AM'
+            'AP'
+            'BA'
+            'CE'
+            'DF'
+            'ES'
+            'GO'
+            'MA'
+            'MG'
+            'MS'
+            'MT'
+            'PA'
+            'PB'
+            'PE'
+            'PI'
+            'PR'
+            'RJ'
+            'RN'
+            'RO'
+            'RR'
+            'RS'
+            'SC'
+            'SE'
+            'SP'
+            'TO'
+          )
+          MaxLength = 0
+          Sorted = True
+          Style = csDropDownList
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  inherited Qsql: TZQuery
+    SQL.Strings = (
+      'SELECT "ID", "Municipio", "UF", "IBGE", "IBGE7"'
+      #9'FROM "NotasFiscais"."Cidades";'
+    )
+    object QsqlID: TLongintField[0]
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object QsqlMunicipio: TStringField[1]
+      FieldKind = fkData
+      FieldName = 'Municipio'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 100
+    end
+    object QsqlUF: TStringField[2]
+      FieldKind = fkData
+      FieldName = 'UF'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 2
+    end
+    object QsqlIBGE: TLongintField[3]
+      FieldKind = fkData
+      FieldName = 'IBGE'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object QsqlIBGE7: TLargeintField[4]
+      FieldKind = fkData
+      FieldName = 'IBGE7'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+  end
+end

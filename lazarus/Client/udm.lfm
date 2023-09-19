@@ -16,7 +16,7 @@ object dm: Tdm
     )
     Connected = True
     Port = 0
-    Database = 'ABNotasFiscais'
+    Database = 'ABDominium'
     User = 'postgres'
     Password = '123456'
     Protocol = 'postgresql'
@@ -26,18 +26,102 @@ object dm: Tdm
   end
   object ZQuery1: TZQuery
     Connection = ZCon
-    Active = True
     SQL.Strings = (
-      'select * from "CFO"'
+      'SELECT * FROM "NotasFiscais"."Pessoa"'
     )
     Params = <>
     Left = 147
     Top = 21
+    object ZQuery1ID: TLongintField
+      FieldKind = fkData
+      FieldName = 'ID'
+      Index = 0
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+    end
+    object ZQuery1Nome: TStringField
+      FieldKind = fkData
+      FieldName = 'Nome'
+      Index = 1
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = True
+      Size = 200
+    end
+    object ZQuery1CNPJ: TStringField
+      FieldKind = fkData
+      FieldName = 'CNPJ'
+      Index = 2
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      Size = 14
+    end
+    object ZQuery1IE: TStringField
+      FieldKind = fkData
+      FieldName = 'IE'
+      Index = 3
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQuery1IdEndereco: TLongintField
+      FieldKind = fkData
+      FieldName = 'IdEndereco'
+      Index = 4
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
+    object ZQuery1Cliente: TBooleanField
+      FieldKind = fkData
+      FieldName = 'Cliente'
+      Index = 5
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object ZQuery1Fornecedor: TBooleanField
+      FieldKind = fkData
+      FieldName = 'Fornecedor'
+      Index = 6
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+      DisplayValues = 'True;False'
+    end
+    object ZQuery1IdEmp: TLongintField
+      FieldKind = fkData
+      FieldName = 'IdEmp'
+      Index = 7
+      LookupCache = False
+      ProviderFlags = [pfInUpdate, pfInWhere]
+      ReadOnly = False
+      Required = False
+    end
   end
   object ZTable1: TZTable
     Connection = ZCon
     TableName = '"NotasFiscais"."CFO"'
     Left = 107
     Top = 96
+  end
+  object DataSource1: TDataSource
+    Left = 166
+    Top = 107
+  end
+  object ZUpdateSQL1: TZUpdateSQL
+    UseSequenceFieldForRefreshSQL = False
+    Left = 204
+    Top = 48
   end
 end

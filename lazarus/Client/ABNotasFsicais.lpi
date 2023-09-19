@@ -5,6 +5,7 @@
     <PathDelim Value="\"/>
     <General>
       <SessionStorage Value="InProjectDir"/>
+      <AutoCreateForms Value="False"/>
       <Title Value="ABNotasFsicais"/>
       <Scaled Value="True"/>
       <ResourceType Value="res"/>
@@ -25,7 +26,7 @@
           </Target>
           <SearchPaths>
             <IncludeFiles Value="$(ProjOutDir)"/>
-            <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes"/>
+            <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes;..\Models\impl"/>
             <UnitOutputDirectory Value="C:\sistemas\ABNotasFiscais\lazarus"/>
           </SearchPaths>
           <Linking>
@@ -130,8 +131,48 @@
         <Filename Value="View\ufrmparametros.pas"/>
         <IsPartOfProject Value="True"/>
         <ComponentName Value="frmParametros"/>
+        <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
         <UnitName Value="uFrmParametros"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmcadastrobase.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCadastroBase"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmCadastroBase"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmcidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmCidades"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmCidades"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\impl\ucidades.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uCidades"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\impl\upessoa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uPessoa"/>
+      </Unit>
+      <Unit>
+        <Filename Value="..\Models\impl\uendereco.pas"/>
+        <IsPartOfProject Value="True"/>
+        <UnitName Value="uEndereco"/>
+      </Unit>
+      <Unit>
+        <Filename Value="View\ufrmpessoa.pas"/>
+        <IsPartOfProject Value="True"/>
+        <ComponentName Value="frmPessoa"/>
+        <HasResources Value="True"/>
+        <ResourceBaseClass Value="Form"/>
+        <UnitName Value="uFrmPessoa"/>
       </Unit>
     </Units>
   </ProjectOptions>
@@ -143,7 +184,7 @@
     </Target>
     <SearchPaths>
       <IncludeFiles Value="$(ProjOutDir)"/>
-      <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes"/>
+      <OtherUnitFiles Value="View;..\..\..\Componentes\Conexao;..\Classes;..\Models\impl"/>
       <UnitOutputDirectory Value="C:\sistemas\ABNotasFiscais\lazarus\Client"/>
     </SearchPaths>
     <Linking>

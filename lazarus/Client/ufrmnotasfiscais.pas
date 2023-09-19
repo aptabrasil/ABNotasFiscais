@@ -5,9 +5,9 @@ unit uFrmNotasFiscais;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus,
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, Translations,
   uFrmDigitacaoNotasProdutos, uFrmEmissaoNotasProdutos, uFrmParametros,
-  uFrmEmissaoNFServico,uFrmNFServico;
+  uFrmEmissaoNFServico,uFrmNFServico,uFrmCidades, uFrmPessoa;
 
 type
 
@@ -35,9 +35,12 @@ type
     MenuItem7: TMenuItem;
     MenuItem8: TMenuItem;
     MenuItem9: TMenuItem;
+    procedure FormCreate(Sender: TObject);
+    procedure MenuItem10Click(Sender: TObject);
     procedure MenuItem11Click(Sender: TObject);
     procedure MenuItem12Click(Sender: TObject);
     procedure MenuItem15Click(Sender: TObject);
+    procedure MenuItem17Click(Sender: TObject);
     procedure MenuItem18Click(Sender: TObject);
     procedure MenuItem4Click(Sender: TObject);
     procedure MenuItem6Click(Sender: TObject);
@@ -82,6 +85,18 @@ begin
   TfrmNFServico.New;
 end;
 
+procedure TfrmNotasFiscais.MenuItem10Click(Sender: TObject);
+begin
+  TfrmCidades.New;
+end;
+
+procedure TfrmNotasFiscais.FormCreate(Sender: TObject);
+begin
+  TranslateUnitResourceStrings( 'LclStrConsts',
+               ExtractFilePath(Application.ExeName ) + 'lclstrconsts.pt_BR.po',
+               'pt_BR', '');
+end;
+
 procedure TfrmNotasFiscais.MenuItem12Click(Sender: TObject);
 begin
   TfrmEmissaoNFServico.New;
@@ -90,6 +105,11 @@ end;
 procedure TfrmNotasFiscais.MenuItem15Click(Sender: TObject);
 begin
   TfrmParametros.New;
+end;
+
+procedure TfrmNotasFiscais.MenuItem17Click(Sender: TObject);
+begin
+  TfrmPessoa.New;
 end;
 
 end.
